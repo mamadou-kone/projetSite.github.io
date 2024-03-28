@@ -1,0 +1,300 @@
+main{
+    display: flex;
+}
+.sec1{
+    flex: 1;
+}
+.sec2{
+    flex: 1;
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    /* couleur de fond */
+    background-color: rgb(220, 220, 220);
+    /* Marge à gauche de 10px pour les éléments avec la classe 'sec2' */ 
+    margin-left: 10px;
+    /* Rayon de bordure arrondi pour le coin inférieur gauche des éléments avec la classe 'sec2' */
+    border-bottom-left-radius: 50px;
+    /* Rayon de bordure arrondi pour le coin supérieur gauche des éléments avec la classe 'sec2' */
+    border-top-left-radius: 50px;
+}
+.sec2 h3{
+    /* flex: 1;
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column; */
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    /* margin-top: -; */
+    /* margin-left: 30px; */
+    text-align: center;
+    color: #2a354b;
+    
+}
+
+
+header{
+    background-color: #2a354b;
+    color: white;
+    height: 150px;
+    
+}
+header .texte{
+    padding-right: 50px;
+    padding-top: 20px;
+}
+.profil{
+    color: #2a354b;
+    background-color: gainsboro;
+    border-top-right-radius: 20px; border-bottom-right-radius: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 20px 0px;
+}
+.profil .icon{
+    margin-right: 5px;
+}
+
+.image{
+    width: 200px ;height: auto ;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top: -80px;
+
+}
+.photo{
+    text-align: center;
+}
+.icon{
+    width: 25px;height: auto;
+    /* margin-right: 10px; */
+    margin-left: 20px;
+}
+/* .profil {
+    text-align: CENTER;
+} */
+
+.ctn ul{
+    list-style-type: none;
+}
+.ctn ul li .ic{
+    margin-right: 10px;
+}
+.ctn{
+    margin-left: 50px;
+}
+.compt{
+    margin-left: 50px;
+}
+@media screen and (max-width: 500px) {
+    main{
+        display: block;
+    }
+    header{
+        height: 200px;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 300px) {
+    
+        /* Les styles que vous définissez ici seront appliqués uniquement 
+           aux écrans dont la largeur est de 600 pixels ou moins */
+           
+        body {
+            font-size: 10px; /* Réduire la taille de la police pour les téléphones */
+            display: block;
+        }
+        main{
+            display: flex;
+        }
+        
+        .image{
+            width: 30% ;height: 30% ;
+            justify-content: center;
+            border-radius: 20px;
+            margin-top: -80px;
+        
+        }
+        
+        .ctn ul{
+            list-style-type: none;
+            width: 80px;
+            text-wrap: wrap;
+            overflow-wrap: break-word;
+            
+        }
+        .ctn ul li .ic{
+            margin-right: 10px;
+            flex: auto;
+        }
+        .ctn{
+            margin-left: 5%;
+            display: flex;
+            flex-wrap: wrap-reverse;
+        }
+        .compt{
+            margin-left: 5%;
+        }
+        header .texte{
+            padding-right: 50%;
+            padding-top: 20px;
+        }
+        .profil{
+            color: #2a354b;
+            background-color: gainsboro;
+            border-top-right-radius: 20px; border-bottom-right-radius: 20px;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            font-size: 90%;
+        }
+        
+    
+    
+}
+
+@media only screen and (max-width: 600px) {
+    /* Les styles que vous définissez ici seront appliqués uniquement 
+       aux écrans dont la largeur est de 600 pixels ou moins */
+       
+    body {
+        font-size: 14px; /* Réduire la taille de la police pour les téléphones */
+    }
+    main{
+        display: flex;
+    }
+    
+    .image{
+        width: 150px ;height: auto ;
+        justify-content: center;
+        border-radius: 20px;
+        margin-top: -80px;
+    
+    }
+    
+    .ctn ul{
+        list-style-type: none;
+        width: 50%;
+        text-wrap: wrap;
+        overflow-wrap: break-word;
+        
+    }
+    .ctn ul li .ic{
+        margin-right: 10px;
+        flex: auto;
+    }
+    .ctn{
+        margin-left: 5%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .compt{
+        margin-left: 5%;
+    }
+
+    
+}
+/* Media query pour les écrans de tablette */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Les styles que vous définissez ici seront appliqués uniquement 
+       aux écrans dont la largeur est comprise entre 601 pixels et 1024 pixels inclus */
+
+       main{
+        display: flex;
+        padding: 0px 0px 0px 0px;
+    }
+    .sec1{
+        flex: 1;
+        
+    }
+    .sec2{
+        flex: 1;
+        margin-top: -50px;
+        display: flex;
+        flex-direction: column;
+        /* couleur de fond */
+        background-color: rgb(220, 220, 220);
+        /* Marge à gauche de 10px pour les éléments avec la classe 'sec2' */ 
+        margin-left: 10px;
+        /* Rayon de bordure arrondi pour le coin inférieur gauche des éléments avec la classe 'sec2' */
+        border-bottom-left-radius: 50px;
+        /* Rayon de bordure arrondi pour le coin supérieur gauche des éléments avec la classe 'sec2' */
+        border-top-left-radius: 50px;
+    }
+    .sec2 h3{
+        /* flex: 1;
+        margin-top: -30px;
+        display: flex;
+        flex-direction: column; */
+        /* justify-content: flex-start; */
+        /* align-items: center; */
+        /* margin-top: -; */
+        /* margin-left: 30px; */
+        text-align: center;
+        color: #2a354b;
+        
+    }
+    
+    
+    header{
+        background-color: #2a354b;
+        color: white;
+        height: 150px;
+        
+    }
+    header .texte{
+        padding-right: 50px;
+        padding-top: 20px;
+    }
+    .profil{
+        color: #2a354b;
+        background-color: gainsboro;
+        border-top-right-radius: 20px; border-bottom-right-radius: 20px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        margin: 20px 0px 20px 0px;
+    }
+    .profil .icon{
+        margin-right: 5px;
+    }
+    
+    .image{
+        width: 200px ;height: auto ;
+        justify-content: center;
+        border-radius: 20px;
+        margin-top: -80px;
+    
+    }
+    body{
+        font-size: 100%;
+    }
+    .photo{
+        text-align: center;
+    }
+    .icon{
+        width: 25px;height: auto;
+        /* margin-right: 10px; */
+        margin-left: 20px;
+    }
+    /* .profil {
+        text-align: CENTER;
+    } */
+    
+    .ctn ul{
+        list-style-type: none;
+        width: 300px;
+        text-wrap: wrap;
+        overflow-wrap: break-word;
+    }
+    .ctn ul li .ic{
+        margin-right: 10px;
+    }
+    .ctn{
+        margin-left: 50px;
+    }
+    .compt{
+        margin-left: 50px;
+    }
+}
